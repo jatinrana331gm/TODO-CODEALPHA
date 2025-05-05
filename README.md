@@ -1,3 +1,5 @@
+Live Demo:https://todo-app-ashy-alpha.vercel.app/
+
 Great — thanks for sharing your project structure! Based on your current setup, here is an updated and accurate `README.md` for your **React To-Do List App**:
 
 ---
@@ -49,7 +51,7 @@ my-todo-app/
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/your-username/my-todo-app.git
+git clone https://github.com/jatinrana331gm/my-todo-app.git
 cd my-todo-app
 ```
 
@@ -66,6 +68,7 @@ npm run dev
 ```
 
 Open `http://localhost:5173` in your browser to use the app.
+https://todo-app-ashy-alpha.vercel.app/
 
 ---
 
@@ -82,7 +85,6 @@ Open `http://localhost:5173` in your browser to use the app.
 
 ### 📸 Screenshot
 
-*(Replace this with an actual screenshot of your app)*
 ![App Screenshot]![image](https://github.com/user-attachments/assets/2179a727-6adc-4cdd-8410-a0f6e1e19175)
 
 
@@ -100,4 +102,3 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Would you like me to write the contents of `TodoApp.jsx` as well, or help with deployment on Vercel or Netlify?

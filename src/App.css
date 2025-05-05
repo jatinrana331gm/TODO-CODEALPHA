@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.todo-container {
+  background: url('https://wallpaperaccess.com/full/317501.jpg') no-repeat center center/cover;
+  padding: 40px;
+  border-radius: 20px;
+  width: 500px;
+  max-width: 95%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.todo-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  z-index: 0;
+  border-radius: 20px;
+}
+
+.todo-container * {
+  position: relative;
+  z-index: 1;
+}
+
+.todo-container h1 {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input,
+.input-section select,
+.input-section button {
+  padding: 12px 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+}
+
+.input-section input {
+  flex: 1;
+  min-width: 180px;
+}
+
+.input-section select {
+  background-color: #fff;
+}
+
+.input-section button {
+  background-color: #1e90ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.input-section button:hover {
+  background-color: #0077e6;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters button {
+  margin: 0 5px;
+  padding: 10px 17px;
+  border: none;
+  border-radius: 25px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filters button:hover {
+  background-color: #005ecf;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  color: white;
+  font-size: 18px;
+  text-align: left;
+}
+
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+}
+
+#taskList .edit-btn,
+#taskList .delete-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#taskList .edit-btn:hover,
+#taskList .delete-btn:hover {
+  transform: scale(1.2);
+}
+
+#emptyMsg {
+  color: #ccc;
+  margin-top: 15px;
+}
